@@ -85,7 +85,7 @@ function chooseRandomWord() {
     someWord = new word(randomWord);
 
     console.log(gameTextColor("Your word contains " + randomWord.length + " letters."));
-    // console.log(gameTextColor("WORD TO GUESS: " + randomWord));
+    console.log(gameTextColor("WORD TO GUESS: " + randomWord));
 
     someWord.splitWord();
     someWord.generateLetters();
