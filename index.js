@@ -78,7 +78,7 @@ function startGame() {
     lettersAlreadyGuessedListArray = [];
 }
 
-//Function to choose a random word from the list of cities in the word bank array.
+//Function to choose a random word from the list of pokemon in the word bank array.
 function chooseRandomWord() {
 
     randomWord = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
@@ -134,7 +134,7 @@ function guessLetter() {
 
                         someWord.letters[i].letterGuessedCorrectly === true;
                         userGuessedCorrectly = true;
-                        someWord.underscores[i] = guess.letter.toUp
+                        someWord.underscores[i] = guess.letter.toUpperCase();
                         slotsFilledIn++
                     }
                 }
@@ -172,7 +172,7 @@ function checkIfUserWon() {
 
         console.log(gameTextColor("====================================================================="));
         console.log(incorrect('YOU LOST. BETTER LUCK NEXT TIME.'));
-        console.log(gameTextColor("The correct city was: " + randomWord));
+        console.log(gameTextColor("The correct pokemon was: " + randomWord));
 
         losses++;
 
